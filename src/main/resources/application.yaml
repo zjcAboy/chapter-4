@@ -1,0 +1,15 @@
+spring:
+  mvc:
+    static-path-pattern: /**
+  resources:
+    static-locations:
+      - classpath:/META-INF/resources/
+      - classpath:/static
+      - classpath:/resources/
+      - file:${upload-path}
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+upload-path: D://temp
+
